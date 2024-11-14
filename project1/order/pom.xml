@@ -24,7 +24,7 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <!--  RestTemplate 所需的负载均衡器  -->
+        <!--  loadbalancer 负载均衡器（可以让 RestTemplate 的请求具有负载均衡的能力）  -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>

@@ -4,3 +4,4 @@
 也可以通过修改脚本文件中的mode参数实现...
 2.课程的链接：https://vip.tulingxueyuan.cn/p/t_pc/course_pc_detail/big_column/p_60decb8be4b0151fc94c41a4
 3.Nacos课程的最后一节是Nacos服务器集群部署，没有跟着实现，以后用到的时候可以再看看
+4.注意Nacos注册中心的不同组（group）的服务之间也不能直接相互调用！（但可以通过自定义方式实现，如直接调用Nacos的OpenApi的方式获取特定分组的服务，然后手动解析服务实例的地址）
