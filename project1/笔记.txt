@@ -1,0 +1,4 @@
+1.Nacos在Windows上的启动方式：
+以集群模式（默认模式）启动的命令：startup.cmd
+以单例模式启动的命令：startup.cmd -m standalone
+也可以通过修改脚本文件中的mode参数实现...
