@@ -2,3 +2,5 @@
 以集群模式（默认模式）启动的命令：startup.cmd
 以单例模式启动的命令：startup.cmd -m standalone
 也可以通过修改脚本文件中的mode参数实现...
+2.课程的链接：https://vip.tulingxueyuan.cn/p/t_pc/course_pc_detail/big_column/p_60decb8be4b0151fc94c41a4
+3.Nacos课程的最后一节是Nacos服务器集群部署，没有跟着实现，以后用到的时候可以再看看
