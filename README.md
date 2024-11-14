@@ -13,3 +13,9 @@
 ### 2. project2 项目
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 > 该项目展示了：
+> * OpenFeign的基本使用————让访问远程服务像访问本地方法一样简单！即OpenFeign代替了RestTemplate
+> * 对Feign进行自定义配置，可采用2种方式：自定义配置类和配置yml文件，本项目演示了如何自定义Feign的调用日志输出级别
+
+### 3. project3 项目
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> 该项目展示了：
