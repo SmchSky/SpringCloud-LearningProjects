@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    # 应用名称（当未配置下面那个服务名称时，Nacos会默认将该名称当做服务名称）
+    name: stock-service
+  cloud:
+    nacos:
+      discovery:
+        service: stock-service  # 服务名称
+        server-addr: 127.0.0.1:8848  # 默认
+        username: nacos  # 默认
+        password: nacos  # 默认
+        namespace: f88a4197-4ae6-40c9-90cc-9c1a1146ed8c  # develop命名空间的id，不同命名空间的服务不能相互调用！
+        #       group: stock-group  # 指定服务的分组，默认为DEFAULT_GROUP，分组是对多个服务逻辑上的分类！位于不同组的服务一般不能直接相互调用（但可以通过自定义的方式实现）！
+        weight: 1  # 通常要结合负载均衡一起使用，即权重高的服务优先被调用

@@ -1,0 +1,4 @@
+1.OpenFeign（代替RestTemplate）的使用步骤：
+    ① 在feign包下新建一个接口并使用@FeignClient注解，完善接口的书写，格式可以完全参考服务提供者的Controller中定义的方法
+    ②（易忘）在SpringBoot启动类加上@EnableFeignClients注解表示开启Feign客户端（第一步中定义的那些接口）的扫描
+2.Feign自定义日志级别可以通过代码配置（自定义配置类），也可以通过yml配置，但是后者在尝试过程中会报错所以我未能实现
