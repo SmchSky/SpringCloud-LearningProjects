@@ -8,9 +8,9 @@ spring:
     nacos:
       discovery:
         service: order-service  # 服务名称
-        server-addr: 127.0.0.1:8848
-        username: nacos
-        password: nacos
+        server-addr: 127.0.0.1:8848  # 默认
+        username: nacos  # 默认
+        password: nacos  # 默认
         namespace: f88a4197-4ae6-40c9-90cc-9c1a1146ed8c  # develop命名空间的id，不同命名空间的服务不能相互调用！
         group: order-group  # 指定服务的分组，默认为DEFAULT_GROUP，分组是对多个服务逻辑上的分类！
         ephemeral: false  # ephemeral意思为“短暂的”，默认为true，表示为临时实例（当服务器15s未收到心跳，则会将该服务的健康状态标记为false，超过30s则会直接删除该服务）
