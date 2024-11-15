@@ -9,7 +9,7 @@ spring:
       server-addr: 127.0.0.1:8848  # 默认
       username: nacos  # 默认
       password: nacos  # 默认
-      # 服务注册与发现配置
+      # Nacos 服务注册与发现
       discovery:
         service: order-service  # 服务名称
         namespace: f88a4197-4ae6-40c9-90cc-9c1a1146ed8c  # develop命名空间的id，不同命名空间的服务不能相互调用！
@@ -18,7 +18,7 @@ spring:
         # 为false则表示该服务为永久实例，即就算没有了心跳服务端也不会删除该服务！
         # 永久实例存在的一个意义是为了当某服务的"健康实例数/总实例数"<"保护阈值"时，触发的"雪崩保护"机制可以选择永久实例进行流量泄洪（即如果触发"雪崩保护"时流量突然变大，且该永久实例健康状态为false，则其依然可以接收客户端请求，并返回此服务不可用的信息，从而减缓了剩余健康实例的压力）
         weight: 1  # 通常要结合负载均衡一起使用，即权重高的服务优先被调用
-      # 配置中心配置
+      # Nacos 配置中心
       config:
         namespace: f88a4197-4ae6-40c9-90cc-9c1a1146ed8c
         group: order-group
