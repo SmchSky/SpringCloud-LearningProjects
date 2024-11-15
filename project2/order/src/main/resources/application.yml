@@ -28,7 +28,7 @@ spring:
         refresh-enabled: true
   config:
     # 设置Spring的额外配置源，即从外部引入（import）额外配置
-    import: nacos:order-config # Data ID
+    import: nacos:order-config # Nacos服务端配置文件的 Data ID
 logging:
   level:
     # 修改特定包下的日志输出级别
