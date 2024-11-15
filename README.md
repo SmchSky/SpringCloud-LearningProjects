@@ -15,6 +15,10 @@
 > 该项目展示了：
 > * OpenFeign的基本使用————让访问远程服务像访问本地方法一样简单！即OpenFeign代替了RestTemplate
 > * 对Feign进行自定义配置，可采用2种方式：自定义配置类和配置yml文件，本项目演示了如何自定义Feign的调用日志输出级别
+> * 如何在Nacos服务端UI界面中新建配置文件并发布
+> * 如何从Nacos-Config配置中心动态拉取配置文件（由于用的是较新版的Nacos，而且官网教程真的垃圾，心累...不过还是成功了）
+![image](https://github.com/user-attachments/assets/ec6ad0b3-ed1a-42f7-8c0d-b92eb7d5a172)
+![image](https://github.com/user-attachments/assets/3a7331ac-3c65-42a4-8ff4-91cdb9125bb8)
 
 ### 3. project3 项目
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
