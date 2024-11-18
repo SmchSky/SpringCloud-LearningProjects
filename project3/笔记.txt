@@ -1,0 +1,9 @@
+1、使用DashBoard的步骤：
+    ① 引入<sentinel-transport-simple-http>依赖
+    ② 从github官网（https://github.com/alibaba/Sentinel/releases）下载 Sentinel 控制台jar包
+    ③ 使用 "java -Dserver.port=3000 -jar sentinel-dashboard-1.8.6.jar" 命令在指定端口开启Sentinel控制台服务
+    ④ 在Sentinel客户端（即SpringBoot应用程序）增加JVM启动参数（即java命令的CLI实参）：
+        -Dcsp.sentinel.dashboard.server=127.0.0.1:3000 和 -Dproject.name=project3
+       第一个参数用于告知客户端服务器的ip地址和端口号是多少，以便向服务器发送心跳包等信息
+       第二个参数用于指定本客户端项目的名称，这个名称会显示在Sentinel控制台中
+    ⑤ 服务端和客户端程序都启动之后，使用postman或者浏览器实施几次请求，这样才能触发客户端向服务端发送相关信息，控制台上才会显示配置信息
