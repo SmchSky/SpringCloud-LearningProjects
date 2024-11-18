@@ -24,6 +24,6 @@
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 > 该项目展示了：
 > * Sentinel的分布式原生使用方法（即不与SpringCloud Alibaba进行整合）
-> * 使用Sentinel对资源进行"可用性"配置的2种方法（加上DashBoard总共是3种），第一种即HelloController中的原生try-catch定义资源+规则控制，第二种即UserController中的使用@SentinelResource注解对资源进行配置，这两种方法都需要结合@PostConstruct注解干预Bean的生命周期
+> * 使用Sentinel对资源进行"可靠性（Reliability）"与"弹性（Resiliency）"配置的2种方法（加上DashBoard总共是3种），第一种即HelloController中的原生try-catch定义资源+规则控制，第二种即UserController中的使用@SentinelResource注解对资源进行配置，这两种方法都需要结合@PostConstruct注解干预Bean的生命周期
 > * 详细解释了@SentinelResource注解的用法
 > * 详细解释了Sentinel中的资源"被流控"、"被降级"（也就是"被熔断"）、"出现异常"这3种情况的本质区别，以及分别的处理方式
