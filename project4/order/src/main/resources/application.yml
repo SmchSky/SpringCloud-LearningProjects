@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: order-sentinel  # 应用名称（会注册到Sentinel控制台）
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:3000  # Sentinel控制台的地址
+      web-context-unify: false  # 关闭 Sentinel 链路收敛（自己再查一下）
