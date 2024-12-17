@@ -87,7 +87,7 @@ public class UserController {
         rule.setMinRequestAmount(2);
         // 设置统计时间窗口为60秒，即60秒作为一个统计周期
         rule.setStatIntervalMs(60 * 1000);
-        // 设置单次"熔断"的时间为10秒，即在这10秒内到达的所有请求都会被"流控"处理！！！注意不是降级处理！！！
+        // 设置单次"熔断"的时间为10秒，即在这10秒内到达的所有请求都会被"流控"处理！！！注意不是"降级"处理！！！
         rule.setTimeWindow(10);
         // 加载配置好的规则
         DegradeRuleManager.loadRules(Collections.singletonList(rule));

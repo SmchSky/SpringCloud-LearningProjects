@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collections;
 
 /**
- * 下面的例子展示的是使用代码来进行Sentinel流量配置（而不是使用DashBoard），可以一定程度上提供更灵活的配置，但不太推荐使用此方式
+ * 下面的例子展示的是使用代码来进行Sentinel流量配置（而不是使用DashBoard和注解方式），可以一定程度上提供更灵活的配置，但不太推荐使用此方式
  * 这种方式的缺点如下：
  * 1、业务侵入性很强，需要在controller中写入非业务代码
  * 2、配置麻烦，若需要添加新的受保护资源，则需要手动添加@PostConstruct注解的方法来添加流控规则
